@@ -1,29 +1,64 @@
 import React, { Component } from 'react';
-import './App.css';
+
 import { Portfolio } from './Portfolio/Portfolio';
 
-export class App extends Component {
-  constructor() {
-    super();
+import { about } from './../constants/About';
+import { skills } from './../constants/Skills';
+import { experiences } from './../constants/Experiences';
+import { projects } from './../constants/Projects';
+import './App.css';
 
-    this.state = {
-      selectedSection: "" 
-    }
-  }
+class App extends Component {
+	constructor () {
+		super();
 
-  handleSectionClick = () => {
-    alert('A button was clicked'); 
-  }
+		this.state = {
+			selectedSection: "",
+			selectedHeading: "",
+			selectedQuote: "",
+			about: null,
+			skills: null,
+			experiences: null,
+			projects: null,
+		};
+	}
 
-  render() {
-    return (
-        <div className="App">
-          <Portfolio 
-            handleSectionClick
-          />
-        </div>
-    );
-  }
+	componentWillMount () {
+		this.setState ({ 
+			about,
+			skills,
+			experiences,
+			projects,
+			selectedHeading: about.heading,
+			selectedQuote: about.quote,
+			selectedSection: "about" 
+		});
+	}
+
+	handleSectionClick =  (section) => {
+		this.setState({
+			selectedSection: section,
+			selectedHeading: this.state[section].heading,
+			selectedQuote: this.state[section].quote
+		})
+	}
+
+	render () {
+		return (
+			<div className="App">
+				<Portfolio
+					handleSectionClick={this.handleSectionClick}
+					selectedSection={this.state.selectedSection}
+					selectedHeading={this.state.selectedHeading}
+					selectedQuote={this.state.selectedQuote}
+					about={this.state.about}
+					skills={this.state.skills}
+					experiences={this.state.experiences}
+					projects={this.state.projects}
+				/>
+			</div>
+		);
+	}
 }
 
 export default App;

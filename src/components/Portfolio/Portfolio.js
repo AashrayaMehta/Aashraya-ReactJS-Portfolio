@@ -1,19 +1,36 @@
 import React from 'react';
 
-import { SideNav } from './../SideNav/SideNav'; 
+import { SideNav } from './../SideNav/SideNav';
+import { SectionContainer } from './../SectionContainer/SectionContainer';
 
 import './portfolio.css';
 
-export const Portfolio = (props) => {
+export const Portfolio = ({ 
+    handleSectionClick,
+    selectedHeading, 
+    selectedQuote,
+    selectedSection,
+    about,
+    skills,
+    experiences,
+    projects }) => {
     return (
         <div className="portfolio-container">
-            <div className="sidenav-container"> 
-                <SideNav />
+            <div className="sidenav-container">
+                <SideNav
+                    handleSectionClick={handleSectionClick}
+                />
             </div>
-            <div className="main-section-container">  
-            <h1> Main Section </h1>
+            <div className="main-section-container">
+                <SectionContainer
+                    selectedSection={selectedSection}
+					selectedHeading={selectedHeading}
+					selectedQuote={selectedQuote}
+					about={about}
+                    skills={skills}
+                    experiences={experiences}
+					projects={projects} />
             </div>
         </div>
-        
-    )
-}
+    );
+};

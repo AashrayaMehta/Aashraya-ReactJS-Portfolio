@@ -2,6 +2,7 @@ import React from 'react';
 
 import { About } from './../About/About';
 import { Skills } from './../Skills/Skills';
+import { Experiences } from './../Experiences/Experiences';
 import { Projects } from './../Projects/Projects';
 
 import './section-container.css';
@@ -12,6 +13,7 @@ export const SectionContainer = ({
     selectedSection,
     about,
     skills,
+    experiences,
     projects }) => {
     return (
         <div className="section-container">
@@ -24,6 +26,7 @@ export const SectionContainer = ({
                     {
                         about: <About bio={about.bio} />,
                         skills: <Skills skills={skills} />,
+                        experiences: <Experiences experiences={experiences} />,
                         projects: <Projects projects={projects} />
                     }[selectedSection]
                 }
