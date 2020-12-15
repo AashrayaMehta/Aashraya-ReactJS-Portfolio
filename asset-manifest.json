@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/aashrayamehta.ca/static/css/main.a60b40b7.chunk.css",
+    "main.js": "/aashrayamehta.ca/static/js/main.16b8cff4.chunk.js",
+    "main.js.map": "/aashrayamehta.ca/static/js/main.16b8cff4.chunk.js.map",
+    "runtime-main.js": "/aashrayamehta.ca/static/js/runtime-main.9df1fadd.js",
+    "runtime-main.js.map": "/aashrayamehta.ca/static/js/runtime-main.9df1fadd.js.map",
+    "static/js/2.2d99c396.chunk.js": "/aashrayamehta.ca/static/js/2.2d99c396.chunk.js",
+    "static/js/2.2d99c396.chunk.js.map": "/aashrayamehta.ca/static/js/2.2d99c396.chunk.js.map",
+    "index.html": "/aashrayamehta.ca/index.html",
+    "precache-manifest.28546d53742c0513a30393452058f47a.js": "/aashrayamehta.ca/precache-manifest.28546d53742c0513a30393452058f47a.js",
+    "service-worker.js": "/aashrayamehta.ca/service-worker.js",
+    "static/css/main.a60b40b7.chunk.css.map": "/aashrayamehta.ca/static/css/main.a60b40b7.chunk.css.map",
+    "static/js/2.2d99c396.chunk.js.LICENSE.txt": "/aashrayamehta.ca/static/js/2.2d99c396.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9df1fadd.js",
+    "static/js/2.2d99c396.chunk.js",
+    "static/css/main.a60b40b7.chunk.css",
+    "static/js/main.16b8cff4.chunk.js"
+  ]
+}
