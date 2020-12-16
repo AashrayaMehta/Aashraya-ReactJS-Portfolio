@@ -8,7 +8,7 @@ export const experiences = {
             about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }, {
             companyName: "Canada Revenue Agency",
-            role: "IT Java Backed Developer",
+            role: "IT Java Backend Developer",
             about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }, {
             companyName: "KPMG",
